@@ -1,0 +1,284 @@
+body{
+    font-family: 'Ubuntu', sans-serif;
+    background-color:#202020;
+    overflow:hidden;
+}
+nav{
+    width:100%;
+    height:10%;
+    background-color:lavender;
+    position:absolute;
+    top:0%;
+    left:0%;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    box-sizing:border-box;
+    overflow:hidden;
+}
+nav h1{
+    color:#333;
+    position:absolute;
+    left:1%;
+    font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+nav h1::before{
+    content:'VIMO ';
+    color:#ff4500;
+}
+.nav-links{
+    width:auto;
+    height:auto;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    position:absolute;
+    right:1%;
+}
+nav h3{
+    color:#333;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    margin-left:0.5rem;
+    margin-right:0.5rem;
+    padding:1rem;
+    cursor: pointer;
+}
+nav h3:hover{
+    background-color:#333;
+    border-radius:0.5rem;
+    color:lavender;
+    transition:0.5s;
+}
+.main{
+    width:100%;
+    height:100vh;
+    position:absolute;
+    top:10%;
+    left:0%;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    flex-direction:column;
+}
+.col-1{
+    width:100%;
+    height:100%;
+    background: linear-gradient(-45deg, #ee7752, purple, #23a6d5, #23d5ab);
+	background-size: 400% 400%;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    flex-direction:column;
+    animation: gradient 15s ease infinite;
+}
+.col-2{
+    width:100%;
+    height:100%;
+    background: linear-gradient(-45deg,  purple, #23a6d5,#ee7752, #23d5ab);
+	background-size: 400% 400%;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    flex-direction:column;
+    animation: gradient 15s ease infinite;
+    display:none;
+}
+.col-3{
+    width:100%;
+    height:100%;
+    background: linear-gradient(-45deg, #ee7752, purple, #23a6d5, #23d5ab);
+	background-size: 400% 400%;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    flex-direction:column;
+    animation: gradient 15s ease infinite;
+    display:none;
+}
+.sub-col-1{
+    width:50%;
+    height:80%;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    flex-direction:column;
+    background-color:#ffffff10;
+    position:absolute;
+    top:5%;
+    left:1%;
+    border-radius:1rem;
+}
+.sub-col-1 h1::after{
+    content:'WEB';
+    color:lavenderblush;
+    font-size:2em;
+}
+.sub-col-1 h1::before{
+    content:'VIMO ';
+    color:#ff4500;
+    font-size:2em;
+}
+.sub-col-1 span{
+    color:whitesmoke;
+    font-weight:bolder;
+    font-size:20px;
+    letter-spacing:1px;
+}
+.sub-col-1 button{
+    padding:0.7rem 3rem;
+    background-color:orangered;
+    border-radius:0.5rem;
+    border:none;
+    color:lavenderblush;
+    font-weight:bolder;
+    font-size:15px;
+    font-family:'Ubuntu', sans-serif;
+    letter-spacing:1px;
+    cursor:pointer;
+}
+.sub-col-2{
+    width:40%;
+    height:80%;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    flex-direction:column;
+    background-color:#ffffff10;
+    position:absolute;
+    top:5%;
+    right:2%;
+    border-radius:1rem;
+}
+.sub-col-2 div{
+    width:44%;
+    height:43%;
+    background-color:red;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    flex-direction:column;
+    border-radius:1rem;
+    color:lavenderblush;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight:bolder;
+    cursor:pointer;
+}
+.sub-col-2 .item-1{
+    background-color:#202020;
+    position:absolute;
+    top:5%;
+    left:5%;
+}
+.sub-col-2 .item-2{
+    background-color:#202020;
+    position:absolute;
+    top:5%;
+    left:51%;
+}
+.sub-col-2 .item-3{
+    background-color:#202020;
+    position:absolute;
+    top:51%;
+    left:5%;
+}
+.sub-col-2 .item-4{
+    background-color:#202020;
+    position:absolute;
+    top:51%;
+    left:51%;
+}
+.login_div{
+    width:40%;
+    height:60%;
+    background-color:whitesmoke;
+    border-radius:0.5rem;
+    font-family: 'Ubuntu', sans-serif;
+    margin-top:-5%;
+    padding:1rem;
+}
+.login_div h1{
+    font-size:45px;
+    font-weight:bold;
+}
+.login_form{
+    display:flex;
+    align-items:left;
+    justify-content:left;
+    flex-direction:column;
+    font-family: 'Ubuntu', sans-serif;
+}
+.login_form input{
+    width:90%;
+    padding:1rem;
+    border:1px solid #333;
+    border-radius:0.3rem;
+    font-weight:bolder;
+    font-size:15px;
+    color:#333;
+    caret-color:orangered;
+}
+.login_form p{
+    color:transparent;
+    font-weight:bolder;
+    margin-left:5%;
+}
+.login_form input[type="button"]{
+    width:95%;
+    color:lavender;
+    border:none;
+    background-color:blueviolet;
+    cursor:pointer;
+}
+.selection{
+    width:auto;
+    height:auto;
+    padding:0.5rem;
+    border-radius:0.5rem;
+    position:absolute;
+    top:3%;
+}
+.col-3 button{
+    padding:1rem;
+    background-color:#ffffff10;
+    font-family: 'Ubuntu', sans-serif;
+    color:lavenderblush;
+    border:none;
+    border-radius:0.5rem;
+    font-size:15px;
+    font-weight:bolder;
+    margin-left:0.5rem;
+    margin-right:0.5rem;
+}
+.col-3 button:hover{
+    background-color:lavenderblush;
+    color:#333;
+}
+.playground{
+    width:95%;
+    height:70vh;
+    background-color:#ffffff10;
+    border-radius:0.5rem;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    flex-direction: column;
+    overflow:auto;
+}
+.playground iframe{
+    width:100%;
+    height:100%;
+    border-radius:0.5rem;
+}
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
